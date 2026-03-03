@@ -16,7 +16,7 @@
 **Turn your xAI Grok chat export into an explorable 3D brain.**
 No servers. No tracking. Everything runs in your browser.
 
-[Live Demo](https://what-does-grok-know.vercel.app) · [Report Bug](https://github.com/fabianzimber/what-does-grok-know/issues) · [Request Feature](https://github.com/fabianzimber/what-does-grok-know/issues)
+[Live Demo](https://grok-brain.vercel.app) · [Report Bug](https://github.com/fabianzimber/what-does-grok-know/issues) · [Request Feature](https://github.com/fabianzimber/what-does-grok-know/issues)
 
 ---
 
