@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0f"/>
+      <stop offset="50%" style="stop-color:#12121a"/>
+      <stop offset="100%" style="stop-color:#0a0a0f"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e63946"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+    <filter id="glowOg">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <!-- Decorative dots -->
+  <circle cx="100" cy="100" r="3" fill="#e63946" opacity="0.3"/>
+  <circle cx="200" cy="80" r="2" fill="#6366f1" opacity="0.2"/>
+  <circle cx="150" cy="180" r="2.5" fill="#f4d03f" opacity="0.2"/>
+  <circle cx="1050" cy="150" r="3" fill="#6366f1" opacity="0.3"/>
+  <circle cx="1100" cy="80" r="2" fill="#e63946" opacity="0.2"/>
+  <circle cx="950" cy="500" r="2.5" fill="#f4d03f" opacity="0.2"/>
+  <circle cx="80" cy="500" r="2" fill="#e63946" opacity="0.2"/>
+  <circle cx="300" cy="550" r="3" fill="#6366f1" opacity="0.15"/>
+  <!-- Brain icon -->
+  <g transform="translate(600,240) scale(0.4)" filter="url(#glowOg)">
+    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#brainGrad)" stroke-width="3" opacity="0.3"/>
+    <circle cx="0" cy="0" r="160" fill="none" stroke="url(#brainGrad)" stroke-width="2" opacity="0.2"/>
+    <path d="M-8,-120 C-60,-120 -110,-85 -120,-35 C-126,8 -102,42 -77,60 C-85,80 -81,107 -60,120 C-38,132 -13,128 0,115 C13,128 38,132 60,120 C81,107 85,80 77,60 C102,42 126,8 120,-35 C110,-85 60,-120 8,-120 Z" fill="url(#brainGrad)" opacity="0.15"/>
+    <path d="M-8,-120 C-60,-120 -110,-85 -120,-35 C-126,8 -102,42 -77,60 C-85,80 -81,107 -60,120 C-38,132 -13,128 0,115 C13,128 38,132 60,120 C81,107 85,80 77,60 C102,42 126,8 120,-35 C110,-85 60,-120 8,-120 Z" fill="none" stroke="url(#brainGrad)" stroke-width="2.5" opacity="0.7"/>
+    <!-- Neural dots -->
+    <circle cx="-35" cy="-70" r="5" fill="#e63946" opacity="0.8"/>
+    <circle cx="35" cy="-70" r="5" fill="#6366f1" opacity="0.8"/>
+    <circle cx="0" cy="-30" r="6" fill="#f4d03f" opacity="0.9"/>
+    <circle cx="-55" cy="15" r="4" fill="#e63946" opacity="0.6"/>
+    <circle cx="55" cy="15" r="4" fill="#6366f1" opacity="0.6"/>
+    <circle cx="-25" cy="55" r="3.5" fill="#e63946" opacity="0.5"/>
+    <circle cx="25" cy="55" r="3.5" fill="#6366f1" opacity="0.5"/>
+    <line x1="-35" y1="-70" x2="0" y2="-30" stroke="#f4d03f" stroke-width="1.5" opacity="0.5"/>
+    <line x1="35" y1="-70" x2="0" y2="-30" stroke="#f4d03f" stroke-width="1.5" opacity="0.5"/>
+    <line x1="0" y1="-30" x2="-55" y2="15" stroke="#e63946" stroke-width="1" opacity="0.3"/>
+    <line x1="0" y1="-30" x2="55" y2="15" stroke="#6366f1" stroke-width="1" opacity="0.3"/>
+  </g>
+  <!-- Title -->
+  <text x="600" y="400" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="52" font-weight="800" fill="white">What Does Grok Know?</text>
+  <!-- Gradient underline -->
+  <rect x="300" y="415" width="600" height="3" rx="1.5" fill="url(#brandGrad)" opacity="0.8"/>
+  <!-- Subtitle -->
+  <text x="600" y="460" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="22" fill="#a0a0b0">Your Grok conversations as an interactive 3D neural network</text>
+  <!-- Tags -->
+  <text x="600" y="510" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="16" fill="#e63946" opacity="0.8">100% Private  ·  Client-Side  ·  NLP Analytics  ·  3D Visualization</text>
+  <!-- Footer -->
+  <text x="600" y="580" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="14" fill="#505060">shiftbloom studio</text>
+</svg>

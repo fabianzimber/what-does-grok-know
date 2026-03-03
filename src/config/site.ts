@@ -1,0 +1,26 @@
+export const siteConfig = {
+  name: "What Does Grok Know?",
+  description:
+    "Explore your xAI Grok conversations as an interactive 3D neural network. Discover hidden patterns, memories, and insights with deep NLP analytics — all 100% private in your browser.",
+  url: "https://what-does-grok-know.vercel.app",
+  ogImage: "https://what-does-grok-know.vercel.app/og.png",
+  creator: "shiftbloom studio",
+  creatorUrl: "https://shiftbloom.studio",
+  github: "https://github.com/fabianzimber/what-does-grok-know",
+  keywords: [
+    "grok",
+    "xai",
+    "chat analytics",
+    "conversation explorer",
+    "neural network",
+    "3d visualization",
+    "nlp",
+    "sentiment analysis",
+    "topic clustering",
+    "memory extraction",
+    "privacy",
+    "client-side",
+    "nextjs",
+    "three.js",
+  ],
+} as const;
