@@ -1,5 +1,6 @@
 "use client";
 
+import { Footer } from "@/components/layout/footer";
 import { FloatingOrbs } from "@/components/shared/floating-orbs";
 import { GradientText } from "@/components/shared/gradient-text";
 import { Button } from "@/components/ui/button";
@@ -108,40 +109,43 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16 relative">
-      <FloatingOrbs />
+    <div className="min-h-screen flex flex-col relative">
+      <div className="flex-1 flex flex-col items-center justify-center px-4 py-16">
+        <FloatingOrbs />
 
-      <div className="w-full max-w-xl space-y-8 text-center">
-        <div className="space-y-3">
-          <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
-            <GradientText>What Does Grok Know?</GradientText>
-          </h1>
-          <p className="text-lg text-brand-muted max-w-md mx-auto">
-            Explore your Grok conversations. Discover patterns, insights, and memories hidden in
-            your chats.
-          </p>
-        </div>
-
-        {phase === "idle" && (
-          <>
-            <UploadZone onFileLoaded={handleFileLoaded} />
-            {error && <p className="text-sm text-brand-primary font-medium">{error}</p>}
-          </>
-        )}
-
-        {(phase === "parsing" || phase === "storing") && (
-          <UploadProgress phase={progressPhase} percent={progressPercent} />
-        )}
-
-        {phase === "done" && stats && (
-          <div className="space-y-6">
-            <ImportSummary stats={stats} />
-            <Button size="lg" onClick={() => router.push("/brain")}>
-              Explore Your Brain
-            </Button>
+        <div className="w-full max-w-xl space-y-8 text-center">
+          <div className="space-y-3">
+            <h1 className="text-5xl sm:text-6xl font-bold tracking-tight">
+              <GradientText>What Does Grok Know?</GradientText>
+            </h1>
+            <p className="text-lg text-brand-muted max-w-md mx-auto">
+              Explore your Grok conversations. Discover patterns, insights, and memories hidden in
+              your chats.
+            </p>
           </div>
-        )}
+
+          {phase === "idle" && (
+            <>
+              <UploadZone onFileLoaded={handleFileLoaded} />
+              {error && <p className="text-sm text-brand-primary font-medium">{error}</p>}
+            </>
+          )}
+
+          {(phase === "parsing" || phase === "storing") && (
+            <UploadProgress phase={progressPhase} percent={progressPercent} />
+          )}
+
+          {phase === "done" && stats && (
+            <div className="space-y-6">
+              <ImportSummary stats={stats} />
+              <Button size="lg" onClick={() => router.push("/brain")}>
+                Explore Your Brain
+              </Button>
+            </div>
+          )}
+        </div>
       </div>
+      <Footer />
     </div>
   );
 }
