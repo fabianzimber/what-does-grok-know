@@ -21,6 +21,7 @@ No servers. No tracking. Everything runs in your browser.
 ---
 
 </div>
+
 ## The Idea
 
 You have had hundreds of conversations with Grok. But what does Grok actually *know* about you?
