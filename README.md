@@ -43,7 +43,7 @@ This is not just a chat viewer. It is a **cognitive mirror**.
 ### 3D Neural Network Brain
 *Every conversation is a neuron. Topics form clusters. Connections emerge.*
 
-<img src="docs/screenshots/brain-loading.png" alt="Brain visualization loading with progress indicator" width="800" />
+<img src="docs/screenshots/brain-network.png" alt="3D neural network visualization showing topic clusters with 214 conversations and 200 connections" width="800" />
 
 ### Deep Insights Dashboard
 *Topic evolution, sentiment analysis, and cognitive patterns over time*
