@@ -3,6 +3,7 @@
 import { Header } from "@/components/layout/header";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { Sidebar } from "@/components/layout/sidebar";
+import { DemoBanner } from "@/components/shared/demo-banner";
 import { AnalysisProvider } from "@/lib/context/analysis-provider";
 
 export default function DashboardLayout({
@@ -16,6 +17,7 @@ export default function DashboardLayout({
         <Sidebar />
         <div className="flex-1 md:ml-64">
           <Header />
+          <DemoBanner />
           <main className="p-4 pb-20 md:pb-4">{children}</main>
         </div>
         <MobileNav />

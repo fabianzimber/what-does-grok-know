@@ -59,3 +59,8 @@ export async function clearDatabase(): Promise<void> {
 export async function hasData(): Promise<boolean> {
   return (await db.conversations.count()) > 0;
 }
+
+export async function isDemoData(): Promise<boolean> {
+  const first = await db.conversations.orderBy("createdAt").first();
+  return first?.title?.startsWith("[Demo]") ?? false;
+}

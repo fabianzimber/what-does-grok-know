@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ImportSummary } from "@/components/upload/import-summary";
 import { UploadProgress } from "@/components/upload/upload-progress";
 import { UploadZone } from "@/components/upload/upload-zone";
+import { loadDemoData } from "@/lib/demo/load-demo";
 import { hasData } from "@/lib/storage/db-queries";
 import { db } from "@/lib/storage/db-schema";
 import { useRouter } from "next/navigation";
@@ -128,6 +129,16 @@ export default function LandingPage() {
             <>
               <UploadZone onFileLoaded={handleFileLoaded} />
               {error && <p className="text-sm text-brand-primary font-medium">{error}</p>}
+              <button
+                type="button"
+                onClick={async () => {
+                  await loadDemoData();
+                  router.push("/brain");
+                }}
+                className="text-sm text-brand-muted hover:text-brand-accent transition-colors underline"
+              >
+                or try with demo data
+              </button>
             </>
           )}
 
